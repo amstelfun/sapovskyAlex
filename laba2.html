@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+ <head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <title>laba1</title>
+   <script type="text/javascript">
+    function validForm() {
+     document.getElementById("a").value = ((0.000000000667*document.forms['form1'].M1.value*document.forms['form1'].M2.value)/document.forms['form1'].R.value); 
+    }
+	</script>
+ </head>
+ <body>
+  <table>
+  <form action="" name="form1">
+	<tr><td><p>Масса первой планеты:</td><td></br> <input type="text" name="M1"></p></td>
+	<tr><td><p>Масса второй планеты:</td><td> <input type="text" name="M2" ></p></td>
+	<tr><td><p>Расстояние:</td><td> <input type="text" name="R" ></p></td>
+	<tr><td><p>Ответ:</td><td> <input type="text" name="otvet" id="a"></p></td>
+	<tr><td><p><input type="button" onClick="validForm()" value="Ok"></p></td>
+  </form>
+</table>
+ </body> 
+</html>
