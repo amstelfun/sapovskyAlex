@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+ 
+	<style>
+		.blue {
+			color = blue;
+		}
+	</style>
+ 
+  <meta charset="utf-8">
+  <title>Таблица</title>
+  <script type="text/javascript">
+
+	function show() {
+		
+		var table=document.getElementById('table');
+		for (var i=0; i<table.rows.length; i++) {
+		
+			for (var j=0; j<table.rows[0].cells.length; j++) {
+				var TD=table.rows[i].cells[j];
+				// console.log(TD); 
+				var sssr = TD.innerHTML;
+				if (sssr[sssr.length-1] == 'ь') {
+					
+					TD.style.backgroundColor = "green";
+					
+				}
+			}
+		}
+	}
+	</script>
+ </head>
+ <body>
+  <button id="main" onclick="show()">Найти</button></br></br>
+  <div id="pole">
+  <table name="table" id="table" border="1">
+   <tr><td>скорость</td><td>время</td><td>расстояние</td><td>кость</td></tr>
+   <tr><td>индеец</td><td>джомолунгма</td><td>шварцнеггер</td><td>акуна матата</td></tr>
+   <tr><td>матан</td><td>солнце</td><td>месть</td><td>костер</td></tr>
+   <tr><td>клавиатура</td><td>погода</td><td>дымоход</td><td>аллилуйа</td></tr>
+   <tr><td>велосипед</td><td>земля</td><td>купить</td><td>мясо</td></tr>
+   <tr><td>стул</td><td>стол</td><td>чебурек</td><td>аккордеон</td></tr>
+   <tr><td>программировать</td><td>пакет</td><td>ниндзя</td><td>капитан</td></tr>
+   <tr><td>деревня</td><td>рубашка</td><td>пить</td><td>ручка</td></tr>
+  </table>
+  </div>
+ </body>
+</html>
